@@ -1,0 +1,54 @@
+body {
+    background-image: url(../img/louis-hansel-shotsoflouis-GAeupqr3vRs-unsplash.jpg);
+    background-size: cover;
+}
+
+.gridwrapper {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 5fr 3fr 2fr;
+    grid-template-areas: 
+    "he n1 n2 n3"
+    "sl sl sl sl"
+    "ad ad ad ad"
+    "fo fo fo fo"
+    ;
+}
+
+header {
+    color: white;
+    grid-area: he;
+}
+
+#nav1 {
+    color: white;
+    grid-area: n1;
+    align-content: right;
+}
+
+#nav2 {
+    color: white;
+    grid-area: n2;
+    align-content: right;
+}
+
+#nav3 {
+    color: white;
+    grid-area: n3;
+    align-content: right;
+}
+
+#slogan {
+    color: white;
+    grid-area: sl;
+    align-content: right;
+}
+
+#adress {
+    color: white;
+    grid-area: ad;
+}
+
+footer {
+    grid-area: fo;
+}
