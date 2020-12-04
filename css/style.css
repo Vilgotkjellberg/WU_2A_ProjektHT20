@@ -1,12 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Playfair Display', serif;
+}
+
 body {
     background-image: url(../img/louis-hansel-shotsoflouis-GAeupqr3vRs-unsplash.jpg);
     background-size: cover;
 }
 
+h1 {
+    font-size: 35px;
+}
+
 .gridwrapper {
+
     display: grid;
     grid-template-columns: 8fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 5fr 3fr 2fr;
+    grid-template-rows: 50px 240px 320px 196.3px;
     grid-template-areas: 
     "he n1 n2 n3"
     "sl sl sl sl"
@@ -15,40 +26,61 @@ body {
     ;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 200;
+}
+
 header {
+    padding: 5px;
     color: white;
     grid-area: he;
 }
 
-#nav1 {
+#meny {
+    padding: 5px;
     color: white;
     grid-area: n1;
-    align-content: right;
+    text-align: right;
 }
 
-#nav2 {
+#socials {
+    padding: 5px;
     color: white;
     grid-area: n2;
-    align-content: right;
+    text-align: center;
+
 }
 
-#nav3 {
+#story {
+    padding: 5px;
     color: white;
     grid-area: n3;
-    align-content: right;
+    text-align: left;
 }
 
 #slogan {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     color: white;
     grid-area: sl;
-    align-content: right;
+    text-align: center;
+    padding-top: 5%;
 }
 
 #adress {
     color: white;
     grid-area: ad;
+    text-align: center;
+
 }
 
 footer {
     grid-area: fo;
+    background: gray;
 }
