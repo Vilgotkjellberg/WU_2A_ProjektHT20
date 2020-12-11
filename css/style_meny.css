@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(../img/Story-background.jpg);
+    background-size: cover;
+}
+
+.gridwrapper {
+
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 240px 320px 196.3px;
+    grid-template-areas: 
+    "he n1 n2 n3"
+    "sl sl sl sl"
+    "ad ad ad ad"
+    "fo fo fo fo"
+    ;
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+    color: white;
+    grid-area: he;
+}
+
+#meny {
+    padding: 5px;
+    color: white;
+    grid-area: n1;
+    text-align: right;
+}
+
+#socials {
+    padding: 5px;
+    color: white;
+    grid-area: n2;
+    text-align: center;
+
+}
+
+#story {
+    padding: 5px;
+    color: white;
+    grid-area: n3;
+    text-align: left;
+}
+
+#slogan {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    grid-area: sl;
+    text-align: center;
+    padding-top: 5%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+a:hover {
+    font-weight: 200;
+}
+
+#logo {
+    height: 20px;
+    width: 20px;
+}
+
+footer {
+    grid-area: fo;
+    background: rgba(64, 75, 87, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#instagram {
+    height: 40px;
+    width: 40px;
+}
