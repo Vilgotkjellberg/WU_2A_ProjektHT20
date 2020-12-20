@@ -4,11 +4,12 @@
 }
 
 body {
-    background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-image: url(../img/Story-background.jpg);
     background-size: cover;
 }
 
 .gridwrapper {
+
     display: grid;
     grid-template-columns: 8fr 1fr 1fr 1fr;
     grid-template-rows: 50px 240px 320px 196.3px;
@@ -27,7 +28,7 @@ header {
     grid-area: he;
 }
 
-#home {
+#meny {
     padding: 5px;
     color: white;
     grid-area: n1;
@@ -42,7 +43,7 @@ header {
 
 }
 
-#story {
+#home {
     padding: 5px;
     color: white;
     grid-area: n3;
